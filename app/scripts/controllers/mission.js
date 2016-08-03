@@ -2,11 +2,12 @@
 
 /**
  * @ngdoc function
- * @name isunlockedApp.controller:MainCtrl
+ * @name isunlockedApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the isunlockedApp
  */
 angular.module('isunlockedApp')
-  .controller('MainCtrl', function () {
+  .controller('MissionCtrl', function () {
+    
   });
