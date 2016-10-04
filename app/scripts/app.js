@@ -41,4 +41,9 @@ angular
       controller: "OrganizationCtrl",
       controllerAs: "organization"
     });
+
+    $stateProvider.state("contributors", {
+      url: "/contributors",
+      templateUrl: "views/contributors.html",
+    });
   });
