@@ -46,4 +46,9 @@ angular
       url: "/contributors",
       templateUrl: "views/contributors.html",
     });
+
+    $stateProvider.state("hushcon", {
+      url: "/hushcon",
+      templateUrl: "views/panel.html",
+    });
   });
