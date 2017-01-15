@@ -18,36 +18,36 @@ angular.module('isunlockedApp', [
     'ui.router'
   ])
   .config(function ($urlRouterProvider, $stateProvider) {
-    $urlRouterProvider.otherwise("/main");
+    $urlRouterProvider.otherwise('/main');
 
-    $stateProvider.state("main", {
-      url: "/main",
+    $stateProvider.state('main', {
+      url: '/main',
       templateUrl: 'views/main.html',
-      controller: "MainCtrl",
-      controllerAs: "main"
+      controller: 'MainCtrl',
+      controllerAs: 'main'
     });
 
-    $stateProvider.state("mission", {
-      url: "/mission",
-      templateUrl: "views/mission.html",
-      controller: "MissionCtrl",
-      controllerAs: "mission"
+    $stateProvider.state('mission', {
+      url: '/mission',
+      templateUrl: 'views/mission.html',
+      controller: 'MissionCtrl',
+      controllerAs: 'mission'
     });
 
-    $stateProvider.state("organization", {
-      url: "/organization",
-      templateUrl: "views/organization.html",
-      controller: "OrganizationCtrl",
-      controllerAs: "organization"
+    $stateProvider.state('organization', {
+      url: '/organization',
+      templateUrl: 'views/organization.html',
+      controller: 'OrganizationCtrl',
+      controllerAs: 'organization'
     });
 
-    $stateProvider.state("contributors", {
-      url: "/contributors",
-      templateUrl: "views/contributors.html",
+    $stateProvider.state('contributors', {
+      url: '/contributors',
+      templateUrl: 'views/contributors.html',
     });
 
-    $stateProvider.state("hushcon", {
-      url: "/hushcon",
-      templateUrl: "views/panel.html",
+    $stateProvider.state('panel', {
+      url: '/panel',
+      templateUrl: 'views/panel.html',
     });
   });
