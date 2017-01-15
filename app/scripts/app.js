@@ -8,8 +8,7 @@
  *
  * Main module of the application.
  */
-angular
-  .module('isunlockedApp', [
+angular.module('isunlockedApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
