@@ -27,9 +27,9 @@ angular.module('isunlockedApp', [
       controllerAs: 'main'
     });
 
-    $stateProvider.state('mission', {
-      url: '/mission',
-      templateUrl: 'views/mission.html',
+    $stateProvider.state('about', {
+      url: '/about',
+      templateUrl: 'views/about.html',
       controller: 'MissionCtrl',
       controllerAs: 'mission'
     });
