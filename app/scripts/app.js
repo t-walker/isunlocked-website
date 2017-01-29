@@ -8,8 +8,7 @@
  *
  * Main module of the application.
  */
-angular
-  .module('isunlockedApp', [
+angular.module('isunlockedApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -28,9 +27,9 @@ angular
       controllerAs: 'main'
     });
 
-    $stateProvider.state('mission', {
-      url: '/mission',
-      templateUrl: 'views/mission.html',
+    $stateProvider.state('about', {
+      url: '/about',
+      templateUrl: 'views/about.html',
       controller: 'MissionCtrl',
       controllerAs: 'mission'
     });
