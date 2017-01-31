@@ -50,4 +50,9 @@ angular.module('isunlockedApp', [
       url: '/panel',
       templateUrl: 'views/panel.html',
     });
+
+    $stateProvider.state('cfp_resources', {
+      url: '/cfp_resources',
+      templateUrl: 'views/cfp.html',
+    });
   });
