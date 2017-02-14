@@ -27,9 +27,9 @@ angular.module('isunlockedApp', [
       controllerAs: 'main'
     });
 
-    $stateProvider.state('mission', {
-      url: '/mission',
-      templateUrl: 'views/mission.html',
+    $stateProvider.state('about', {
+      url: '/about',
+      templateUrl: 'views/about.html',
       controller: 'MissionCtrl',
       controllerAs: 'mission'
     });
@@ -49,5 +49,10 @@ angular.module('isunlockedApp', [
     $stateProvider.state('panel', {
       url: '/panel',
       templateUrl: 'views/panel.html',
+    });
+
+    $stateProvider.state('cfp_resources', {
+      url: '/cfp_resources',
+      templateUrl: 'views/cfp.html',
     });
   });
