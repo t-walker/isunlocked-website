@@ -8,6 +8,6 @@
  * Controller of the isunlockedApp
  */
 angular.module('isunlockedApp')
-  .controller('AboutCtrl', function () {
+  .controller('MissionCtrl', function () {
 
   });
