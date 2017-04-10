@@ -51,6 +51,16 @@ angular.module('isunlockedApp', [
       templateUrl: 'views/panel.html',
     });
 
+    $stateProvider.state('board', {
+      url: '/board',
+      templateUrl: 'views/board.html',
+    });
+
+    $stateProvider.state('faq', {
+      url: '/faq',
+      templateUrl: 'views/faq.html',
+    });
+
     $stateProvider.state('cfp_resources', {
       url: '/cfp_resources',
       templateUrl: 'views/cfp.html',
