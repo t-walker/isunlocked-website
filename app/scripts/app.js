@@ -61,6 +61,11 @@ angular.module('isunlockedApp', [
       templateUrl: 'views/faq.html',
     });
 
+    $stateProvider.state('dc25', {
+      url: '/dc25',
+      templateUrl: 'views/dc25.html',
+    });
+
     $stateProvider.state('cfp_resources', {
       url: '/cfp_resources',
       templateUrl: 'views/cfp.html',
