@@ -1,4 +1,40 @@
-<header class="business-header">
+<style>
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+/*
+ * Styles copied from the Grid example to make grid rows & columns visible.
+ */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+h4 {
+  margin-top: 20px;
+}
+.row {
+  margin-bottom: 20px;
+}
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+[class*="col-"] {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+</style>
+
+<header>
   <div class="container">
     <div class="row">
       <div class="col-md-3">
@@ -13,13 +49,14 @@
     </div>
   </div>
 </header>
+
 <br />
+
 <div class="row">
   <div class="col-md-12">
     <h2>What is ISUnlocked?</h2>
     <hr />
     <h5>We are InfoSec Unlocked and we are an organization that supports diverse voices at computer security conferences.</h5>
-    <br />
   </div>
 </div>
 
@@ -29,7 +66,7 @@
       <div class="panel-heading">
         <h3 class="panel-title">Diversity &amp; Outreach</h3>
       </div>
-      <div class="panel-body" style="height: 230px;">
+      <div class="panel-body">
         <p>
           We can help connect you to a fantastic network of groups dedicated to diversity
           within the many computer security conferences.
@@ -45,12 +82,12 @@
     </div>
   </div>
 
-  <div class=" col-md-4">
+  <div class="col-md-4">
     <div class="panel panel-info">
       <div class="panel-heading">
         <h3 class="panel-title">Submitting to a CFP?</h3>
       </div>
-      <div class="panel-body" style="height: 230px;">
+      <div class="panel-body">
         <p>
           If you are submitting to a CFP and would like someone to look over your paper,
           please register to have one of our reviewers look over it for you.
@@ -58,6 +95,7 @@
         <p>
           Someone from our team will contact you to pair you with a reviewer.
         </p>
+        <br />
         <a class="btn btn-info btn-lg col-md-12" href="https://goo.gl/forms/rQfs45XYkHQIJwLK2" target="_blank">Sign-Up For CFP Review!</a>
       </div>
     </div>
@@ -68,7 +106,7 @@
       <div class="panel-heading">
         <h3 class="panel-title">Speaking Opportunities</h3>
       </div>
-      <div class="panel-body" style="height: 230px;">
+      <div class="panel-body">
         <p>If you're looking to speak at a conference but do not know how to get started, we can help you with some of the basic first steps.</p>
         <p>We will have a <a href="https://calendar.google.com/calendar/embed?src=insecunlocked%40gmail.com&ctz=America/New_York">calendar</a> of the major timelines for the conferences and links to get you started.</p>
         <p>Feel free to <a href="mailto:insecunlocked@gmail.com">reach out</a> to us at anytime with any questions you have regarding our organization or submitting to conferences.</p>
