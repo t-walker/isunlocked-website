@@ -46,14 +46,21 @@ angular.module('isunlockedApp', [
       templateUrl: 'views/contributors.html',
     });
 
-    $stateProvider.state('panel', {
-      url: '/panel',
-      templateUrl: 'views/panel.html',
+    $stateProvider.state('cfp-panel', {
+      url: '/cfp-panel',
+      templateUrl: 'views/events/cfp_panel.html',
+    });
+
+    $stateProvider.state('diversity-panel', {
+      url: '/diversity-panel',
+      templateUrl: 'views/events/diversity_panel.html',
     });
 
     $stateProvider.state('board', {
       url: '/board',
       templateUrl: 'views/board.html',
+      controller: 'ReviewBoardCtrl',
+      controllerAs: 'reviewBoard'
     });
 
     $stateProvider.state('faq', {
@@ -63,11 +70,16 @@ angular.module('isunlockedApp', [
 
     $stateProvider.state('dc25', {
       url: '/dc25',
-      templateUrl: 'views/dc25.html',
+      templateUrl: 'views/events/dc25.html',
     });
 
-    $stateProvider.state('cfp_resources', {
+    $stateProvider.state('cfp-resources', {
       url: '/cfp_resources',
       templateUrl: 'views/cfp.html',
+    });
+
+    $stateProvider.state('past-events', {
+      url: '/past-events',
+      templateUrl: 'views/past_events.html',
     });
   });

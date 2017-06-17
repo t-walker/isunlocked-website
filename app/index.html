@@ -52,9 +52,12 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a ui-sref="mission">Mission Statement</a></li>
-        <li><a ui-sref="board">Review Board</a></li>
         <li><a ui-sref="organization">Organization</a></li>
-        <li><a ui-sref="contributors">Contributors</a></li>
+        <li><a ui-sref="past-events">Past Events</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="pull-right" ui-sref="board">CFP Review Board</a></li>
+        <li><a class="pull-right" ui-sref="cfp-resources">CFP Resources</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
@@ -102,6 +105,7 @@
   <script src="scripts/controllers/main.js"></script>
   <script src="scripts/controllers/mission.js"></script>
   <script src="scripts/controllers/organization.js"></script>
+  <script src="scripts/controllers/reviewboard.js"></script>
 
   <script>
     (function(i, s, o, g, r, a, m) {
