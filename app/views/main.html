@@ -1,50 +1,54 @@
 <style>
-/*
+  /*
  * Row with equal height columns
  * --------------------------------------------------
  */
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-}
 
-/*
+  .row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /*
  * Styles copied from the Grid example to make grid rows & columns visible.
  */
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
 
-h4 {
-  margin-top: 20px;
-}
-.row {
-  margin-bottom: 20px;
-}
-.row .row {
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-[class*="col-"] {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  h4 {
+    margin-top: 20px;
+  }
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  .row .row {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  [class*="col-"] {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 </style>
 
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-2">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-8">
         <div class="row">
           <img class="img-responsive" src="images/logo.png" />
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-2">
       </div>
     </div>
   </div>
@@ -53,43 +57,52 @@ h4 {
 <br />
 <div class="clearfix"></div>
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-12">
+    <h1 style="text-align: center;">Join us for InfoSec Unlocked University</h1>
+    <h3 style="text-align: center;">DEF CON 25 in the Patrician Room at Caesar's Palace</h3>
+    <p style="text-align: center; font-size: 300%">
+      July 27-29th
+    </p>
   </div>
-  <div class="col-md-8">
-    <div class="panel panel-success">
-      <div class="panel-body">
-        <div class="row">
-          <div class="col-md-12">
-            <h3 style="text-align: center;">Join us for InfoSec Unlocked University</h3>
-            <p style="text-align: center; font-size: 140%">
-              DEF CON 25 in Las Vegas, Nevada from July 27th - 29th
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <center><a href="https://docs.google.com/forms/d/e/1FAIpQLSfRB7DupYR0DRoKcQeuLa0G3Q3KEWzCtfRU1qQXyAtFDdn1Ow/viewform?c=0&w=1" class="btn btn-lg btn-success" target="_blank">Register Now</a>&nbsp;&nbsp;&nbsp;&nbsp;<a ui-sref="dc25" class="btn btn-lg btn-success">View Schedule</a></center>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2">
-          </div>
-          <div class="col-md-8">
-            <ul style="font-size: 120%">
-              <li>Learn about submitting papers to conferences.</li>
-              <li>Get feedback from InfoSec rockstars in your field.</li>
-              <li>Create better presentations and submissions.</li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-          </div>
-        </div>
-      </div>
-    </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <center><a href="https://docs.google.com/forms/d/e/1FAIpQLSfRB7DupYR0DRoKcQeuLa0G3Q3KEWzCtfRU1qQXyAtFDdn1Ow/viewform?c=0&w=1" class="btn btn-lg btn-info" target="_blank">Register Now</a>&nbsp;&nbsp;&nbsp;&nbsp;<a ui-sref="dc25" class="btn btn-lg btn-info">View Schedule</a></center>
   </div>
-  <div class="col-md-2">
+</div>
+<div class="row">
+  <div class="col-md-1">
   </div>
-
+  <div class="col-md-10">
+    <p style="font-size: 220%">Underrepresented InfoSec professionals who aspire to give their first on-stage conference talk are welcome!</p>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <p style="font-size: 150%">We’ll teach you how to:</p>
+    <ul style="font-size: 150%">
+      <li>Craft your idea into one that will work on stage</li>
+      <li>Submit to your first CFP</li>
+      <li>Develop your talk</li>
+      <li>Build your slide deck</li>
+      <li>Engage with your audience both during and after your presentation</li>
+    </ul>
+  </div>
+  <div class="col-md-5">
+    <p style="font-size: 150%">InfoSec Unlocked University teachers include:</p>
+    <ul style="font-size: 150%">
+      <li>Nate Cardozo</li>
+      <li>Stephen “Stepto” Toulouse</li>
+      <li>Renderman</li>
+      <li>Allan Friedman</li>
+      <li>Deviant Ollam</li>
+      <li>Tarah Wheeler</li>
+      <li>More to come!</li>
+    </ul>
+  </div>
 </div>
 
 <div class="row">
@@ -108,12 +121,10 @@ h4 {
       </div>
       <div class="panel-body">
         <p>
-          We can help connect you to a fantastic network of groups dedicated to diversity
-          within the many computer security conferences.
+          We can help connect you to a fantastic network of groups dedicated to diversity within the many computer security conferences.
         </p>
         <p>
-          If you are a conference organizer and would like to learn more about
-          diversity and inclusion please contact us <a href="mailto:insecunlocked@gmail.com">contact us</a>.
+          If you are a conference organizer and would like to learn more about diversity and inclusion please contact us <a href="mailto:insecunlocked@gmail.com">contact us</a>.
         </p>
         <p>
           If you are looking to speak at conferences we have a variety of resources to get you started.
@@ -129,8 +140,7 @@ h4 {
       </div>
       <div class="panel-body">
         <p>
-          If you are submitting to a CFP and would like someone to look over your paper,
-          please register to have one of our reviewers look over it for you.
+          If you are submitting to a CFP and would like someone to look over your paper, please register to have one of our reviewers look over it for you.
         </p>
         <p>
           Someone from our team will contact you to pair you with a reviewer.
@@ -162,13 +172,11 @@ h4 {
     <h2 name="help">How can you help?</h2>
     <hr />
     <p>
-      If you are interested in being a member of our conversations on diversity
-      in information security, <a href="mailto: InSecUnlocked@gmail.com">please
-      shoot us an e-mail</a>. We are looking for forum moderators, community organizers,
-      conference reviewers, community partners, web page reviewers, data entry, calendar maintainers, etc.</p>
-      <p>
+      If you are interested in being a member of our conversations on diversity in information security, <a href="mailto: InSecUnlocked@gmail.com">please
+      shoot us an e-mail</a>. We are looking for forum moderators, community organizers, conference reviewers, community partners, web page reviewers, data entry, calendar maintainers, etc.</p>
+    <p>
       We are also looking for people to join our <a ui-sref="board">CFP Review Board</a>. E-mail <a href="mailto:t@tarah.org">t@tarah.org</a> for more information about joining.</p>
-      <p>You can also follow us on <a href="https://twitter.com/isunlocked" target="_blank">Twitter</a> to stay connected!</p>
+    <p>You can also follow us on <a href="https://twitter.com/isunlocked" target="_blank">Twitter</a> to stay connected!</p>
   </div>
 </div>
 <!-- /.row -->

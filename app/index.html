@@ -54,10 +54,12 @@
         <li><a ui-sref="mission">Mission Statement</a></li>
         <li><a ui-sref="organization">Organization</a></li>
         <li><a ui-sref="past-events">Past Events</a></li>
+        <li><a ui-sref="contributors">Contributors</a></li>
+
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="pull-right" ui-sref="board">CFP Review Board</a></li>
-        <li><a class="pull-right" ui-sref="cfp-resources">CFP Resources</a></li>
+        <li><a ui-sref="board">CFP Review Board</a></li>
+        <li><a ui-sref="cfp-resources">CFP Resources</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
@@ -71,7 +73,7 @@
     <![endif]-->
 
   <div class="container">
-    <div ui-view></div>
+    <div class="ui-view" autoscroll="false"></div>
   </div>
 
   <div class="footer">
