@@ -73,6 +73,12 @@ angular.module('isunlockedApp', [
       templateUrl: 'views/events/dc25.html',
     });
 
+    $stateProvider.state('dc25party', {
+      url: '/dc25party',
+      templateUrl: 'views/events/dc25party.html',
+    });
+
+
     $stateProvider.state('cfp-resources', {
       url: '/cfp_resources',
       templateUrl: 'views/cfp.html',
