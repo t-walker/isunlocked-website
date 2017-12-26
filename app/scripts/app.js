@@ -41,6 +41,11 @@ angular.module('isunlockedApp', [
       controllerAs: 'organization'
     });
 
+    $stateProvider.state('history', {
+      url: '/history',
+      templateUrl: 'views/history.html',
+    });
+
     $stateProvider.state('contributors', {
       url: '/contributors',
       templateUrl: 'views/contributors.html',
