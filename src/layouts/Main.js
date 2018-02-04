@@ -7,6 +7,9 @@ import Mission from '../pages/Mission';
 import Organization from '../pages/Organization';
 import PastEvents from '../pages/PastEvents';
 import Home from '../pages/Home';
+import Speakers from '../pages/resources/Speakers';
+import OpenCFP from '../pages/resources/OpenCFP';
+import Conferences from '../pages/resources/Conferences';
 
 class Main extends Component {
   render() {
@@ -21,6 +24,10 @@ class Main extends Component {
                         <Route path="/mission" component={Mission}/>
                         <Route path="/organization" component={Organization}/>
                         <Route path="/past-events" component={PastEvents}/>
+                        <Route path="/resources/speakers" component={Speakers}/>
+                        <Route path="/resources/open-cfp" component={OpenCFP}/>
+                        <Route path="/resources/conferences" component={Conferences}/>
+
                         <Route path="/" component={Home}/>
                     </Switch>
                 </div>

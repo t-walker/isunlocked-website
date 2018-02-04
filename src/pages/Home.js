@@ -31,13 +31,13 @@ class Home extends Component {
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-white bg-secondary mb-3">
-                        <div class="card-body bg-primary">
+                    <div class="card text-white mb-3">
+                        <div class="card-body bg-secondary">
                             <h4 class="card-title" style={{textAlign: "center"}}>CFP Review Program</h4>
                             <p class="card-text text-white">
                                 ISUnlocked provides a free review process for new speakers looking to get feedback before they submit. 
                             </p>
-                            <a class="btn btn-secondary btn-block" href="#">Sign-Up Now</a>
+                            <a class="btn btn-success btn-block" href="#">Sign-Up Now</a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ class Home extends Component {
                         Looking to start speaking at conferences but don't know where to start?
                         We provide resources and services for new speakers looking to get their start.
                     </p>
-                    <p><a className="btn btn-success" href="#" role="button">Learn More &raquo;</a></p>
+                    <p><a className="btn btn-success" href="/resources/speakers" role="button">Learn More &raquo;</a></p>
                 </div>
                 <div className="col-md-6">
                     <h2>Diversity and Inclusion</h2>
@@ -69,7 +69,7 @@ class Home extends Component {
                         Most conference speakers go through a CFP process where they submit directly to conferences.
                         If you're interested in speaking at conferences, check this listing of open CFPs provided by <a href="https://twitter.com/cfp_time">@cfp_time</a>.
                     </p>
-                    <p><a className="btn btn-success" href="https://twitter.com/cfp_time" target="_blank" role="button">Learn More &raquo;</a></p>
+                    <p><a className="btn btn-success" href="/resources/open-cfps" target="_blank" role="button">Learn More &raquo;</a></p>
                 </div>
                 <div className="col-md-6">
                     <h2>Conference Resources</h2>
@@ -77,7 +77,7 @@ class Home extends Component {
                         Interested in fostering a more inclusive environment at your conference?
                         ISUnlocked has several resources on the best practices for conference organizers.
                     </p>
-                    <p><a className="btn btn-success" href="#" role="button">Learn More &raquo;</a></p>
+                    <p><a className="btn btn-success" href="/resources/conferences" role="button">Learn More &raquo;</a></p>
                 </div>
             </div>
             <hr />
