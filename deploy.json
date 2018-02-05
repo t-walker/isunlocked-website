@@ -1,6 +1,6 @@
 {
     "apps": [{
-        "name": "dog-park-finder:4000",
+        "name": "isunlocked:4000",
         "script": "dist/index.js",
         "log_date_format": "YYYY-MM-DD HH:mm Z",
         "env": {

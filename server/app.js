@@ -15,7 +15,6 @@ const app = express();
 /*==================================
 =            Middleware            =
 ==================================*/
-app.use(favicon(path.join(__dirname, 'favicon.ico')));
 app.use(helmet()); // Helmet helps you secure your Express apps by setting various HTTP headers.
 app.use(compression());
 app.use(logger('tiny'));
