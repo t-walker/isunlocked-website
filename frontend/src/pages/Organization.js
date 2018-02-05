@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import FontAwesome from 'react-fontawesome'
 
 class Organization extends Component {
   render() {
@@ -12,9 +11,11 @@ class Organization extends Component {
         <h3>AdaZebra <small className="organization-subtitle">President of the Board</small></h3>
         <h3>Tarah Wheeler <small className="organization-subtitle">Treasurer</small></h3>
         <p>
-            The board serves as the backbone of the organization. 
-            This text is garbage and I'm not sure what to put here.
-            We should just be describing the board here.
+          The Board determines the organization's mission, sets policy, and assesses and approves programs
+          and services that are appropriate to our mission of supporting diverse voices at InfoSec conferences. 
+        </p>
+        <p>
+          If you are interested in serving on our board please reach out to: <a href="mailto:insecunlocked@gmail.com">insecunlocked@gmail.com</a>.
         </p>
         <br />
 

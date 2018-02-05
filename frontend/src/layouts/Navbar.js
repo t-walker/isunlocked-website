@@ -69,12 +69,21 @@ class Navigation extends Component {
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu-right">
                     <DropdownItem>
-                        <NavLink href="/past-events">Past Events</NavLink>
+                        <NavLink href="/resources/past-events">Future Speakers</NavLink>
+                    </DropdownItem>
+                    <DropdownItem>
+                        <NavLink href="/resources/past-events">Diversity &amp; Inclusion</NavLink>
+                    </DropdownItem>
+                    <DropdownItem>
+                        <NavLink href="/resources/open-cfps">Open CPFs</NavLink>
                     </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink href="https://twitter.com/isunlocked" target="_blank"><span className="fa fa-lg fa-twitter"></span></NavLink>
+                <NavLink href="https://twitter.com/isunlocked" target="_blank">Code of Conduct</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://twitter.com/isunlocked" target="_blank"><span className="fa fa-lg fa-twitter" style={{color: "#08a0E9"}}></span></NavLink>
               </NavItem>
             </Nav>
           </Collapse>
