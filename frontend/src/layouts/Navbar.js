@@ -69,10 +69,10 @@ class Navigation extends Component {
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu-right">
                     <DropdownItem>
-                        <NavLink href="/resources/past-events">Future Speakers</NavLink>
+                        <NavLink href="/resources/speakers">Future Speakers</NavLink>
                     </DropdownItem>
                     <DropdownItem>
-                        <NavLink href="/resources/past-events">Diversity &amp; Inclusion</NavLink>
+                        <NavLink href="/resources/diversity">Diversity &amp; Inclusion</NavLink>
                     </DropdownItem>
                     <DropdownItem>
                         <NavLink href="/resources/open-cfps">Open CPFs</NavLink>

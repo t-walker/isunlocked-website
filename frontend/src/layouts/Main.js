@@ -10,6 +10,8 @@ import Home from '../pages/Home';
 import Speakers from '../pages/resources/Speakers';
 import OpenCFP from '../pages/resources/OpenCFP';
 import Conferences from '../pages/resources/Conferences';
+import Diversity from '../pages/resources/Diversity';
+import Footer from './Footer';
 
 class Main extends Component {
   render() {
@@ -27,12 +29,15 @@ class Main extends Component {
                         <Route path="/resources/speakers" component={Speakers}/>
                         <Route path="/resources/open-cfps" component={OpenCFP}/>
                         <Route path="/resources/conferences" component={Conferences}/>
+                        <Route path="/resources/diversity" component={Diversity}/>
 
                         <Route path="/" component={Home}/>
                     </Switch>
                 </div>
               </div>
           </Router>
+          <Footer style={{marginBottom: "0px"}}/>
+
       </div>
     );
   }

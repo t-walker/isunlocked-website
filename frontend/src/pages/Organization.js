@@ -7,7 +7,7 @@ class Organization extends Component {
         <h1>Organization</h1>
         <hr />
 
-        <h2>Board of Directors</h2>
+        <h2 className="text-success">Board of Directors</h2>
         <h3>AdaZebra <small className="organization-subtitle">President of the Board</small></h3>
         <h3>Tarah Wheeler <small className="organization-subtitle">Treasurer</small></h3>
         <p>
@@ -19,7 +19,7 @@ class Organization extends Component {
         </p>
         <br />
 
-        <h2>Executive Committee</h2>
+        <h2 className="text-success">Executive Committee</h2>
         <h3>Tyler Walker <small className="organization-subtitle">Executive Director</small></h3>
         <h3>Steve Christey <small className="organization-subtitle">Executive Director</small></h3>
         <p>

@@ -33,7 +33,7 @@ class Home extends Component {
                 <div class="col-md-4">
                     <div class="card text-white mb-3">
                         <div class="card-body bg-secondary">
-                            <h4 class="card-title" style={{textAlign: "center"}}>CFP Review Program</h4>
+                            <h4 class="card-title text-success" style={{textAlign: "center"}}>CFP Review Program</h4>
                             <p class="card-text text-white">
                                 ISUnlocked provides a free review process for new speakers looking to get feedback before they submit. 
                             </p>
@@ -45,55 +45,56 @@ class Home extends Component {
             <hr />
             <div className="row">
                 <div className="col-md-6">
-                    <h2>Resources for Speakers</h2>
+                    <h2 className="text-success">Resources for Speakers</h2>
                     <p>
                         Looking to start speaking at conferences but don't know where to start?
                         We provide resources and services for new speakers looking to get their start.
                     </p>
-                    <p><a className="btn btn-success" href="/resources/speakers" role="button">Learn More &raquo;</a></p>
+                    <p><a className="btn btn-secondary" href="/resources/speakers" role="button">Learn More &raquo;</a></p>
                 </div>
                 <div className="col-md-6">
-                    <h2>Diversity and Inclusion</h2>
+                    <h2 className="text-success">Diversity and Inclusion</h2>
                     <p>
                         Interested in fostering a more inclusive environment at your conference?
                         ISUnlocked has several resources on the best practices for conference organizers.
                     </p>
-                    <p><a className="btn btn-success" href="#" role="button">Learn More &raquo;</a></p>
+                    <p><a className="btn btn-secondary" href="/resources/diversity" role="button">Learn More &raquo;</a></p>
                 </div>
             </div>
             <hr />
             <div className="row">
                 <div className="col-md-6">
-                    <h2>Open Call for Papers</h2>
+                    <h2 className="text-success">Open Call for Papers</h2>
                     <p>
                         Most conference speakers go through a CFP process where they submit directly to conferences.
                         If you're interested in speaking at conferences, check this listing of open CFPs provided by <a href="https://twitter.com/cfp_time">@cfp_time</a>.
                     </p>
-                    <p><a className="btn btn-success" href="/resources/open-cfps" role="button">Learn More &raquo;</a></p>
+                    <p><a className="btn btn-secondary" href="/resources/open-cfps" role="button">Learn More &raquo;</a></p>
                 </div>
                 <div className="col-md-6">
-                    <h2>Conference Resources</h2>
+                    <h2 className="text-success">Conference Resources</h2>
                     <p>
                         Interested in fostering a more inclusive environment at your conference?
                         ISUnlocked has several resources on the best practices for conference organizers.
                     </p>
-                    <p><a className="btn btn-success" href="/resources/conferences" role="button">Learn More &raquo;</a></p>
+                    <p><a className="btn btn-secondary" href="/resources/conferences" role="button">Learn More &raquo;</a></p>
                 </div>
             </div>
             <hr />
             <div className="row">
                 <div className="col-md-12">
-                    <div className="card border-info mb-3">
-                      <div className="card-body text-primary">
-                        <h2 className="card-title" style={{textAlign: "center"}}>How You Can Help</h2>
+                    <div className="card mb-3">
+                      <div className="card-body text-white">
+                        <h2 className="card-title" style={{textAlign: "center"}}>Support InfoSec Unlocked</h2>
                          <p className="card-text" style={{textAlign: "center"}}>
-                            If you're looking to help support the InfoSec Unlocked mission, please consider <a href="#">donating</a> or <a href="#">volunteering</a> with us.<br />
+                            If you're looking to help support the InfoSec Unlocked mission, please consider <a href="https://www.paypal.com/donate/?token=NI23JOLKZbyqDCIkTXmg7qzJ7IsEcjiR3hqhIEF13CqtkUyWHwVJTq8eyV7hdCScINwOFW&country.x=US&locale.x=US">donating</a> or <a href="mailto:insecunlocked@gmail.com">volunteering</a> with us.<br />
                             All contributions are tax deductible.
                          </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <hr />
         </div>
     );
   }

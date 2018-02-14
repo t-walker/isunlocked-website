@@ -59,8 +59,8 @@ class OpenCFP extends Component {
 
         currentCfpRows.push(
           <tr key={i}>
-            <td><a href={row.website} target="_blank">{row.name}</a></td>
             <td className={color}>{row.cfp_deadline !== null ? cfp_deadline.toDateString() : "Unspecified"}</td>
+            <td><a href={row.website} target="_blank">{row.name}</a></td>
             <td>{row.conf_start_date !== null ? conf_start_date.toDateString() : "Unspecified"}</td>
             <td>{row.city}, {row.province}</td>
           </tr>
@@ -76,10 +76,10 @@ class OpenCFP extends Component {
       <table className="table table-hover table-striped">
       <thead className="bg-info">
         <tr>
-          <th width="20%">Conference</th>
-          <th width="10%">CFP Deadline</th>
-          <th width="10%">Conference Date</th>
-          <th width="10%">Location</th>
+        <th width="15%">CFP Deadline</th>
+          <th width="40%">Conference</th>
+          <th width="15%">Conference Date</th>
+          <th width="15%">Location</th>
         </tr>
       </thead>
       <tbody>
@@ -104,9 +104,9 @@ class OpenCFP extends Component {
                 {this.renderOpenCFPTable()}
               </div>
             </div>
-
           </div>
         </div>
+        <hr />
       </div>
     );
   }
