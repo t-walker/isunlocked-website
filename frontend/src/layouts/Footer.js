@@ -20,8 +20,8 @@ class Footer extends Component {
                     <span className="muted"><strong>Support our Mission</strong></span><br />
                     <span className="muted"><a href="https://www.paypal.com/donate/?token=NI23JOLKZbyqDCIkTXmg7qzJ7IsEcjiR3hqhIEF13CqtkUyWHwVJTq8eyV7hdCScINwOFW&country.x=US&locale.x=US">Donate</a> via PayPal <i class="fa fa-paypal"></i></span><br />
                     <span className="muted">
-                        Follow us on <a href="https://www.twitter.com/isunlocked" target="_blank">Twitter <i class="fa fa-twitter"></i></a><br />
-                        Follow us on <a href="https://www.linkedin.com/company/infosec-unlocked/" target="_blank">LinkedIn <i class="fa fa-linkedin"></i></a><br />
+                        Follow us on <a href="https://www.twitter.com/isunlocked" target="_blank" rel="noopener noreferrer">Twitter <i class="fa fa-twitter"></i></a><br />
+                        Follow us on <a href="https://www.linkedin.com/company/infosec-unlocked/" target="_blank" rel="noopener noreferrer">LinkedIn <i class="fa fa-linkedin"></i></a><br />
                     </span>
                     <hr />
 

@@ -26,7 +26,7 @@ class Speakers extends Component {
               </div>
               <div className="row">
                 <div className="col-md-6">
-                    <iframe className="embed-responsive" src="https://www.youtube.com/embed/9yp2azFIKRY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe title="Submitting a CFP to a Conference" className="embed-responsive" src="https://www.youtube.com/embed/9yp2azFIKRY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div>
                   <div className="col-md-6">
                     <p>
@@ -48,7 +48,7 @@ class Speakers extends Component {
               </div>
               <div className="row">
                 <div className="col-md-6">
-                    <iframe className="embed-responsive" src="https://www.youtube.com/embed/sfWAefKcV-w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe title="DEF CON Unlocked" className="embed-responsive" src="https://www.youtube.com/embed/sfWAefKcV-w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div>
                   <div className="col-md-6">
                     <p>
@@ -73,7 +73,7 @@ class Speakers extends Component {
               </div>
               <div className="row">
                 <div className="col-md-6">
-                    <iframe className="embed-responsive" src="https://www.youtube.com/embed/k0prs_m7FrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe title="BSIDES CFP 101"  className="embed-responsive" src="https://www.youtube.com/embed/k0prs_m7FrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div>
                   <div className="col-md-6">
                     <p>
@@ -94,7 +94,7 @@ class Speakers extends Component {
               </div>
               <div className="row">
                 <div className="col-md-6">
-                    <iframe className="embed-responsive" src="https://www.youtube.com/embed/NQR9gGVzOsA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe title="How to Prepare For Your Talk" className="embed-responsive" src="https://www.youtube.com/embed/NQR9gGVzOsA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div>
                   <div className="col-md-6">
                     <p>
@@ -110,14 +110,14 @@ class Speakers extends Component {
         <div className="row">
           <div className="col-md-12">
             <h2 className="text-success" style={{textAlign: "center"}}>Articles &amp; Blogs</h2>
-            <p><a href="http://snipe.net/2014/06/why-you-should-stop-stalling-and-start-presenting/" target="_blank">Why You Should Stop Stalling and Start Presenting</a> | Snipe</p>
-            <p><a href="https://www.ashedryden.com/blog/what-you-need-to-know-about-speaking-at-conferences" target="_blank">What You Need To Know About Speaking at Conferences</a> | Ashe Dryden</p>
-            <p><a href="https://www.youtube.com/watch?v=sfWAefKcV-w" target="_blank">DEFCON UNLOCKED: Panel about submitting to DEFON</a> | Tarah Wheeler</p>
-            <p><a href="https://whitehatcheryl.wordpress.com/giving-a-talk-in-infosec/" target="_blank">Giving a Talk in InfoSec: Do That Thing That Scares You</a> | Cheryl Biswas</p>
-            <p><a href="https://thesweetkat.com/blog/2016/10/23/the-building-blocks-of-infosec-cfps" target="_blank">The Building Blocks of InfoSec CFPs</a> | Kat Sweet</p>
-            <p><a href="https://thesweetkat.com/blog/2016/3/16/getting-back-up" target="_blank">Getting Back Up: I Survived, and So Will You</a> | Kat Sweet</p>
-            <p><a href="https://defcon.org/html/links/dc-speakerscorner.html#nikita-cfp" target="_blank">How Do I Make my CFP Stand Out?</a> | Nikita</p>
-            <p><a href="https://www.helpnetsecurity.com/2016/03/30/how-to-get-your-talk-accepted-at-black-hat/" target="_blank">How To Get Your Talk Accepted at Black Hat</a> | Mirko Zorz</p>
+            <p><a href="http://snipe.net/2014/06/why-you-should-stop-stalling-and-start-presenting/" target="_blank" rel="noopener noreferrer">Why You Should Stop Stalling and Start Presenting</a> | Snipe</p>
+            <p><a href="https://www.ashedryden.com/blog/what-you-need-to-know-about-speaking-at-conferences" target="_blank" rel="noopener noreferrer">What You Need To Know About Speaking at Conferences</a> | Ashe Dryden</p>
+            <p><a href="https://www.youtube.com/watch?v=sfWAefKcV-w" target="_blank" rel="noopener noreferrer">DEFCON UNLOCKED: Panel about submitting to DEFON</a> | Tarah Wheeler</p>
+            <p><a href="https://whitehatcheryl.wordpress.com/giving-a-talk-in-infosec/" target="_blank" rel="noopener noreferrer">Giving a Talk in InfoSec: Do That Thing That Scares You</a> | Cheryl Biswas</p>
+            <p><a href="https://thesweetkat.com/blog/2016/10/23/the-building-blocks-of-infosec-cfps" target="_blank" rel="noopener noreferrer">The Building Blocks of InfoSec CFPs</a> | Kat Sweet</p>
+            <p><a href="https://thesweetkat.com/blog/2016/3/16/getting-back-up" target="_blank" rel="noopener noreferrer">Getting Back Up: I Survived, and So Will You</a> | Kat Sweet</p>
+            <p><a href="https://defcon.org/html/links/dc-speakerscorner.html#nikita-cfp" target="_blank" rel="noopener noreferrer">How Do I Make my CFP Stand Out?</a> | Nikita</p>
+            <p><a href="https://www.helpnetsecurity.com/2016/03/30/how-to-get-your-talk-accepted-at-black-hat/" target="_blank" rel="noopener noreferrer">How To Get Your Talk Accepted at Black Hat</a> | Mirko Zorz</p>
           </div>
         </div>
       </div>

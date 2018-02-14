@@ -94,7 +94,7 @@ class OpenCFP extends Component {
         <div className="row">
           <div className="col-md-12">
             <h1>Open CFPs</h1>
-            <p>The following conferences are still looking for speakers! This information is provided by <a href="https://twitter.com/cfp_time" target="_blank">@cfp_time</a>.</p>
+            <p>The following conferences are still looking for speakers! This information is provided by <a href="https://twitter.com/cfp_time" target="_blank" rel="noopener noreferrer">@cfp_time</a>.</p>
           </div>
         </div>
         <div className="row">

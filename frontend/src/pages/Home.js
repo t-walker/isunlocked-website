@@ -8,7 +8,7 @@ class Home extends Component {
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <img src={logo} className="img img-fluid" />
+                    <img src={logo} className="img img-fluid" alt="Purple lock with words: InfoSec Unlocked unlocking diversity"/>
                 </div>                
             </div>
             <div className="row" style={{marginTop: "20px", marginBottom: "20px"}}>
