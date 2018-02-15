@@ -7,7 +7,8 @@ class OpenCFP extends Component {
     super();
 
     this.state = {
-      cfps: []
+      cfps: [],
+      loading: true
     }
   }
   getOpenCFP() {
@@ -15,6 +16,7 @@ class OpenCFP extends Component {
     .then((response) => {
       let state = this.state;
       state.cfps = response.data.cfps;
+      state.loading = false;
       this.setState(state);
     })
     .catch(function (error) {
@@ -89,6 +91,12 @@ class OpenCFP extends Component {
     );
   }
   render() {
+
+    if (this.state.loading) { 
+      return ("Loading...");
+    }
+
+
     return (
       <div className="container">
         <div className="row">
