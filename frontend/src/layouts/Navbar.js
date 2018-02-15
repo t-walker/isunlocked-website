@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import logoLock from "../assets/logoLock.png";
+
 import {
     Collapse,
     Navbar,
@@ -40,7 +42,10 @@ class Navigation extends Component {
     return (
         <Navbar dark expand="lg" className="fixed-top bg-dark" style={{marginBottom: "10px"}}>
           <div className="container">
-          <NavbarBrand href="/">InfoSec Unlocked</NavbarBrand>
+          <NavbarBrand href="/">
+            <img src={logoLock} style={{width: "20px"}} className="img img-responsive d-inline-block align-top mr-1" alt="" />
+            InfoSec Unlocked
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -50,7 +55,7 @@ class Navigation extends Component {
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu-right">
                   <DropdownItem>
-                    <NavLink href="/mission">Mission Statement</NavLink>
+                    <NavLink href="/mission" >Mission Statement</NavLink>
                   </DropdownItem>
                   <DropdownItem>
                     <NavLink href="/organization">Organization</NavLink>

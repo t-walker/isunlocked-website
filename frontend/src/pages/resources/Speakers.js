@@ -26,7 +26,7 @@ class Speakers extends Component {
               </div>
               <div className="row">
                 <div className="col-md-6">
-                    <iframe title="Submitting a CFP to a Conference" className="embed-responsive" src="https://www.youtube.com/embed/9yp2azFIKRY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe title="Submitting a CFP to a Conference" className="embed-responsive" src="https://www.youtube.com/embed/9yp2azFIKRY" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
                   </div>
                   <div className="col-md-6">
                     <p>
@@ -48,7 +48,7 @@ class Speakers extends Component {
               </div>
               <div className="row">
                 <div className="col-md-6">
-                    <iframe title="DEF CON Unlocked" className="embed-responsive" src="https://www.youtube.com/embed/sfWAefKcV-w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe title="DEF CON Unlocked" className="embed-responsive" src="https://www.youtube.com/embed/sfWAefKcV-w" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
                   </div>
                   <div className="col-md-6">
                     <p>
@@ -73,7 +73,7 @@ class Speakers extends Component {
               </div>
               <div className="row">
                 <div className="col-md-6">
-                    <iframe title="BSIDES CFP 101"  className="embed-responsive" src="https://www.youtube.com/embed/k0prs_m7FrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe title="BSIDES CFP 101"  className="embed-responsive" src="https://www.youtube.com/embed/k0prs_m7FrE" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
                   </div>
                   <div className="col-md-6">
                     <p>
@@ -94,7 +94,7 @@ class Speakers extends Component {
               </div>
               <div className="row">
                 <div className="col-md-6">
-                    <iframe title="How to Prepare For Your Talk" className="embed-responsive" src="https://www.youtube.com/embed/NQR9gGVzOsA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe title="How to Prepare For Your Talk" className="embed-responsive" src="https://www.youtube.com/embed/NQR9gGVzOsA" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
                   </div>
                   <div className="col-md-6">
                     <p>
