@@ -3,6 +3,63 @@ import React, { Component } from 'react';
 import logo from '../assets/logo.png';
 
 class Home extends Component {
+  constructor() {
+      super();
+
+      this.resources = [
+          {
+            title: "Get Started Speaking",
+            url: "/resources/speakers",
+            children: (
+                <p>
+                    Looking to start speaking at conferences but don't know where to start?
+                    We provide resources and services for new speakers looking to get their start.
+                </p>
+            )
+          },
+          {
+            title: "Diversity & Inclusion" ,
+            url: "/resources/diversity",
+            children: (
+                <p>
+                    Interested in fostering a more inclusive environment at your conference?
+                    ISUnlocked has several resources on the best practices for conference organizers.
+                </p>
+            )
+          },
+          {
+            title: "Open CFPs" ,
+            url: "/resources/open-cfps",
+            children: (
+                <p>
+                    Most conference speakers go through a CFP process where they submit directly to conferences.
+                    If you're interested in speaking at conferences, check this listing of open CFPs provided by <a href="https://twitter.com/cfp_time">@cfp_time</a>.
+                </p>
+            )
+          },
+          {
+            title: "Learn by Example" ,
+            url: "/resources/examples",
+            children: (
+                <p>
+                    We've compiled these talks and CFPs to help you figure out what you'll need to submit to a conference.
+                    Use these to help shape your first talk from CFP to slides!
+                </p>
+            )
+          }
+      ];
+  }
+
+  renderResources() {
+    let resources = [];
+
+    for (let i = 0; i < this.resources.length; i++) {
+        resources.push(<Resource {... this.resources[i]} />);
+    }
+
+    return resources;
+  }
+
   render() {
     return (
         <div className="container">
@@ -11,6 +68,7 @@ class Home extends Component {
                     <img src={logo} className="img img-fluid" alt="Purple lock with words: InfoSec Unlocked unlocking diversity"/>
                 </div>                
             </div>
+
             <div className="row" style={{marginTop: "20px", marginBottom: "20px"}}>
                 <div className="col-md-12">
                     <p className={"text-info"} style={{textAlign: "center", fontSize: "300%"}}>
@@ -18,6 +76,7 @@ class Home extends Component {
                     </p>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-md-8">
                     <p>
@@ -44,41 +103,7 @@ class Home extends Component {
             </div>
             <hr />
             <div className="row">
-                <div className="col-md-6">
-                    <h2 className="text-success">Resources for Speakers</h2>
-                    <p>
-                        Looking to start speaking at conferences but don't know where to start?
-                        We provide resources and services for new speakers looking to get their start.
-                    </p>
-                    <p><a className="btn btn-secondary" href="/resources/speakers" role="button">Learn More &raquo;</a></p>
-                </div>
-                <div className="col-md-6">
-                    <h2 className="text-success">Diversity and Inclusion</h2>
-                    <p>
-                        Interested in fostering a more inclusive environment at your conference?
-                        ISUnlocked has several resources on the best practices for conference organizers.
-                    </p>
-                    <p><a className="btn btn-secondary" href="/resources/diversity" role="button">Learn More &raquo;</a></p>
-                </div>
-            </div>
-            <hr />
-            <div className="row">
-                <div className="col-md-6">
-                    <h2 className="text-success">Open Call for Papers</h2>
-                    <p>
-                        Most conference speakers go through a CFP process where they submit directly to conferences.
-                        If you're interested in speaking at conferences, check this listing of open CFPs provided by <a href="https://twitter.com/cfp_time">@cfp_time</a>.
-                    </p>
-                    <p><a className="btn btn-secondary" href="/resources/open-cfps" role="button">Learn More &raquo;</a></p>
-                </div>
-                <div className="col-md-6">
-                    <h2 className="text-success">Conference Resources</h2>
-                    <p>
-                        Interested in fostering a more inclusive environment at your conference?
-                        ISUnlocked has several resources on the best practices for conference organizers.
-                    </p>
-                    <p><a className="btn btn-secondary" href="/resources/conferences" role="button">Learn More &raquo;</a></p>
-                </div>
+                {this.renderResources()}
             </div>
             <hr />
             <div className="row">
@@ -98,6 +123,19 @@ class Home extends Component {
         </div>
     );
   }
+}
+
+class Resource extends Component {
+
+    render() {
+        return (
+            <div className="col-md-6 mb-3">
+                <h2 className="text-success">{this.props.title}</h2>
+                {this.props.children}
+                <p><a className="btn btn-secondary" href={this.props.url} role="button">Learn More &raquo;</a></p>
+            </div>
+        )
+    }
 }
 
 export default Home;

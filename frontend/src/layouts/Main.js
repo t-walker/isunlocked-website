@@ -9,8 +9,8 @@ import PastEvents from '../pages/PastEvents';
 import Home from '../pages/Home';
 import Speakers from '../pages/resources/Speakers';
 import OpenCFP from '../pages/resources/OpenCFP';
-import Conferences from '../pages/resources/Conferences';
 import Diversity from '../pages/resources/Diversity';
+import Examples from '../pages/resources/Examples';
 import Footer from './Footer';
 
 class Main extends Component {
@@ -28,9 +28,8 @@ class Main extends Component {
                         <Route path="/past-events" component={PastEvents}/>
                         <Route path="/resources/speakers" component={Speakers}/>
                         <Route path="/resources/open-cfps" component={OpenCFP}/>
-                        <Route path="/resources/conferences" component={Conferences}/>
+                        <Route path="/resources/examples" component={Examples}/>
                         <Route path="/resources/diversity" component={Diversity}/>
-
                         <Route path="/" component={Home}/>
                     </Switch>
                 </div>
