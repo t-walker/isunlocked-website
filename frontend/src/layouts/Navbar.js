@@ -82,6 +82,9 @@ class Navigation extends Component {
                     <DropdownItem>
                         <NavLink href="/resources/open-cfps">Open CPFs</NavLink>
                     </DropdownItem>
+                    <DropdownItem>
+                        <NavLink href="/resources/examples">Example CFPs</NavLink>
+                    </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>

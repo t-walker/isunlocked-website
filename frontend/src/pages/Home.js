@@ -96,7 +96,7 @@ class Home extends Component {
                             <p class="card-text text-white">
                                 ISUnlocked provides a free review process for new speakers looking to get feedback before they submit. 
                             </p>
-                            <a class="btn btn-success btn-block" href="#">Sign-Up Now</a>
+                            <a class="btn btn-success btn-block" href="/register/cfp-help">Sign-Up Now</a>
                         </div>
                     </div>
                 </div>

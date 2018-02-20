@@ -40,6 +40,16 @@ nav {
     color: #999;
 }
 
+.form-label {
+    font-size: "120%";
+    color: #AAA;
+}
+
+.form-input {
+    font-size: "120%";
+    background: #EEE;
+}
+
 footer {
     position: absolute;
     bottom: 0;
