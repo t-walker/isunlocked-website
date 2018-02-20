@@ -1,93 +1,17 @@
 import React, { Component } from 'react';
 import ResourceLink from '../../components/ResourceLink';
 
+import DiversityResourceLinks from "../../assets/json/DiversityResourceLinks.json";
+import CodeOfConductResourceLinks from "../../assets/json/CodeOfConductLinks.json";
+import CFPResourceLinks from "../../assets/json/CFPResourceLinks.json";
+
 class Diversity extends Component {
   constructor() {
     super();
 
-    this.resourceLinks = [
-      {
-        url: "https://www.defcon.org/html/links/dc-code-of-conduct.html",
-        name: "Why Have a Code of Conduct",
-        author: "Ethics & Compliance Initiative"
-      },
-      {
-        url: "http://confcodeofconduct.com/",
-        name: "Conference Code of Conduct",
-        author: "Left Logic"
-      },
-      {
-        url: "https://www.ashedryden.com/blog/codes-of-conduct-101-faq",
-        name: "Codes of Conduct 101 + FAQ",
-        author: "Ashe Dryden"
-      },
-      {
-        url: "http://www.oreilly.com/conferences/code-of-conduct.html",
-        name: "Conferences Code of Conducts",
-        author: "O'Reilly"
-      }
-    ];
-
-    this.cocLinks = [
-      {
-        url: "https://www.defcon.org/html/links/dc-code-of-conduct.html",
-        name: "DEF CON",
-        author: "Code of Conduct"
-      },
-      {
-        url: "https://www.bsidesroc.com/about/code-of-conduct/",
-        name: "BSidesROC",
-        author: "Code of Conduct"
-      },
-      {
-        url: "http://bsidestampa.net/code-of-conduct/",
-        name: "BSidesTampa",
-        author: "Code of Conduct"
-      },
-      {
-        url: "https://www.derbycon.com/blog/derbycon-values-safety-and-code-of-conduct/",
-        name: "DerbyCon",
-        author: "Code of Conduct"
-      },
-      {
-        url: "https://queercon.org/about-us/code-conduct/",
-        name: "QueerCon",
-        author: "Code of Conduct"
-      },
-      {
-        url: "https://www.usenix.org/conferences/coc",
-        name: "USENIX",
-        author: "Code of Conduct"
-      },
-      {
-        url: "https://circlecitycon.com/policies/",
-        name: "Circle City Con",
-        author: "Code of Conduct"
-      },
-      {
-        url: "https://nolacon.com/code-of-conduct/",
-        name: "NolaCon",
-        author: "Code of Conduct"
-      }
-    ];
-
-    this.cfpLinks = [
-      {
-        url: "https://greatresearch.org/2013/10/25/program-committees-and-paper-selection/",
-        name: "Program Committees and Paper Selection",
-        author: "greatresearch.org"
-      },
-      {
-        url: "https://people.cs.umass.edu/~brun/doubleblind.html",
-        name: "A case for double-blind reviewing in software engineering",
-        author: "Yuriy Brun, University of Massachusetts"
-      },
-      {
-        url: "https://www.insidehighered.com/news/2016/09/07/new-study-suggests-continued-bias-academic-conference-panel-selections",
-        name: "The Gender Factor in Conference Presentations",
-        author: "Inside Higher Ed"
-      }
-    ];
+    this.resourceLinks = DiversityResourceLinks;
+    this.cocLinks = CodeOfConductResourceLinks;
+    this.cfpLinks = CFPResourceLinks;
   }
 
   renderResourceLinks() {
