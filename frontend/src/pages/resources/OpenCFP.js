@@ -3,14 +3,11 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 class OpenCFP extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      cfps: [],
-      loading: true
-    }
+  state = {
+    cfps: [],
+    loading: true
   }
+
   getOpenCFP() {
     axios.get('/api/v1/cfptime')
     .then((response) => {

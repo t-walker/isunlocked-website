@@ -1,22 +1,13 @@
 import React, { Component } from 'react';
 import ResourceLink from '../../components/ResourceLink';
 
+import ExampleCFPs from "../../assets/json/ExampleCFPs.json";
+
 class Examples extends Component {
   constructor() {
     super();
 
-    this.resources = [
-      {
-        url: "https://github.com/sghctoma/gamehack-defcon23/blob/master/cfp_application.txt",
-        name: "Gamehack DEF CON 23",
-        author: "Tamas Szakaly"
-      },
-      {
-        url: "https://github.com/sghctoma/antfs-poc-defcon24/tree/master/cfp-application",
-        name: "Help I've Got Ants  DEF CON 23",
-        author: "Tamas Szakaly"
-      }
-    ];
+    this.resources = ExampleCFPs;
   }
 
   renderResources() {

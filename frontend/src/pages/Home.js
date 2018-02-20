@@ -3,52 +3,48 @@ import React, { Component } from 'react';
 import logo from '../assets/img/logo.png';
 
 class Home extends Component {
-  constructor() {
-      super();
-
-      this.resources = [
-          {
-            title: "Get Started Speaking",
-            url: "/resources/speakers",
-            children: (
-                <p>
-                    Looking to start speaking at conferences but don't know where to start?
-                    We provide resources and services for new speakers looking to get their start.
-                </p>
-            )
-          },
-          {
-            title: "Diversity & Inclusion" ,
-            url: "/resources/diversity",
-            children: (
-                <p>
-                    Interested in fostering a more inclusive environment at your conference?
-                    ISUnlocked has several resources on the best practices for conference organizers.
-                </p>
-            )
-          },
-          {
-            title: "Open CFPs" ,
-            url: "/resources/open-cfps",
-            children: (
-                <p>
-                    Most conference speakers go through a CFP process where they submit directly to conferences.
-                    If you're interested in speaking at conferences, check this listing of open CFPs provided by <a href="https://twitter.com/cfp_time">@cfp_time</a>.
-                </p>
-            )
-          },
-          {
-            title: "Learn by Example" ,
-            url: "/resources/examples",
-            children: (
-                <p>
-                    We've compiled these talks and CFPs to help you figure out what you'll need to submit to a conference.
-                    Use these to help shape your first talk from CFP to slides!
-                </p>
-            )
-          }
-      ];
-  }
+    resources = [
+        {
+          title: "Get Started Speaking",
+          url: "/resources/speakers",
+          children: (
+              <p>
+                  Looking to start speaking at conferences but don't know where to start?
+                  We provide resources and services for new speakers looking to get their start.
+              </p>
+          )
+        },
+        {
+          title: "Diversity & Inclusion" ,
+          url: "/resources/diversity",
+          children: (
+              <p>
+                  Interested in fostering a more inclusive environment at your conference?
+                  ISUnlocked has several resources on the best practices for conference organizers.
+              </p>
+          )
+        },
+        {
+          title: "Open CFPs" ,
+          url: "/resources/open-cfps",
+          children: (
+              <p>
+                  Most conference speakers go through a CFP process where they submit directly to conferences.
+                  If you're interested in speaking at conferences, check this listing of open CFPs provided by <a href="https://twitter.com/cfp_time">@cfp_time</a>.
+              </p>
+          )
+        },
+        {
+          title: "Learn by Example" ,
+          url: "/resources/examples",
+          children: (
+              <p>
+                  We've compiled these talks and CFPs to help you figure out what you'll need to submit to a conference.
+                  Use these to help shape your first talk from CFP to slides!
+              </p>
+          )
+        }
+    ]
 
   renderResources() {
     let resources = [];
