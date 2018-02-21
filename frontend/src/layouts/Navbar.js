@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import logoLock from "../assets/logoLock.png";
+import logoLock from "../assets/img/logoLock.png";
 
 import {
     Collapse,
@@ -13,14 +13,16 @@ import {
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem} from 'reactstrap';
+    DropdownItem
+  } from 'reactstrap';
   
 class Navigation extends Component {
+  state = {
+    isOpen: false
+  }
+
   constructor() {
       super();
-      this.state = {
-          isOpen: false
-      }
 
       this.toggle = this.toggle.bind(this);
   }
@@ -81,6 +83,9 @@ class Navigation extends Component {
                     </DropdownItem>
                     <DropdownItem>
                         <NavLink href="/resources/open-cfps">Open CPFs</NavLink>
+                    </DropdownItem>
+                    <DropdownItem>
+                        <NavLink href="/resources/examples">Example CFPs</NavLink>
                     </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TwitterHandle from '../components/TwitterHandle';
 
 class PastEvents extends Component {
   render() {
@@ -17,10 +18,10 @@ class PastEvents extends Component {
                     to talk about LGBT representation at conferences.
                   </p>
                   <p>
-                    Moderator: Tyler Walker <a href="https://twitter.com/airercode500" target="_blank" rel="noopener noreferrer">@airercode500</a><br /><br />
-                    Emily <a href="https://twitter.com/emilymaxima" target="_blank" rel="noopener noreferrer">@emilymaxima</a><br />
-                    Avi <a href="https://twitter.com/_llzes" target="_blank" rel="noopener noreferrer">@_llzes</a><br />
-                    TProphet <a href="https://twitter.com/TProphet" target="_blank" rel="noopener noreferrer">@TProphet</a><br />
+                    Moderator: Tyler Walker <TwitterHandle handle="airercode500" /><br /><br />
+                    Emily <TwitterHandle handle="emilymaxima" /><br />
+                    Avi <TwitterHandle handle="_llzes" /><br />
+                    TProphet <TwitterHandle handle="TProphet" /><br />
                   </p>
                 </div>
                 <div className="col-md-7">
@@ -102,9 +103,11 @@ class PastEvents extends Component {
                     the audience.
                   </p>
                   <p>
-                    Moderator: Ada Zebra <a href="https://twitter.com/AdaZebra" target="_blank" rel="noopener noreferrer">@AdaZebra</a><br /><br />
-                    BSIDES Boise: Sandy Dunn <a href="https://twitter.com/subzer0girl" target="_blank" rel="noopener noreferrer">@subzer0girl</a><br /> 
-                    DakotaCon: Kyle Cronin <a href="https://twitter.com/Kyle_Cronin" target="_blank" rel="noopener noreferrer">@Kyle_Cronin</a><br /> Circle City Con: Kat Sweet <a href="https://twitter.com/TheSweetKat" target="_blank" rel="noopener noreferrer">@TheSweetKat</a><br /> BSIDES NOVA: Meg Layton <a href="https://twitter.com/vamegabyte" target="_blank" rel="noopener noreferrer">@Vamegabyte</a>
+                    Moderator: Ada Zebra <TwitterHandle handle="AdaZebra" /><br /><br />
+                    BSIDES Boise: Sandy Dunn <TwitterHandle handle="subzer0girl" /><br /> 
+                    DakotaCon: Kyle Cronin <TwitterHandle handle="Kyle_Cronin" /><br /> 
+                    Circle City Con: Kat Sweet <TwitterHandle handle="TheSweetKat" /><br /> 
+                    BSIDES NOVA: Meg Layton <TwitterHandle handle="vamegabyte" />
                   </p>
                 </div>
                 <div className="col-md-7">

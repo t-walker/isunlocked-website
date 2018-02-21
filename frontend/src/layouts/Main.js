@@ -2,16 +2,18 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Navigation from './Navbar';
+import Footer from './Footer';
+
+import Home from '../pages/Home';
 import History from '../pages/History';
 import Mission from '../pages/Mission';
 import Organization from '../pages/Organization';
 import PastEvents from '../pages/PastEvents';
-import Home from '../pages/Home';
 import Speakers from '../pages/resources/Speakers';
 import OpenCFP from '../pages/resources/OpenCFP';
-import Conferences from '../pages/resources/Conferences';
 import Diversity from '../pages/resources/Diversity';
-import Footer from './Footer';
+import Examples from '../pages/resources/Examples';
+import ReviewRegistration from '../pages/ReviewRegistration';
 
 class Main extends Component {
   render() {
@@ -28,9 +30,9 @@ class Main extends Component {
                         <Route path="/past-events" component={PastEvents}/>
                         <Route path="/resources/speakers" component={Speakers}/>
                         <Route path="/resources/open-cfps" component={OpenCFP}/>
-                        <Route path="/resources/conferences" component={Conferences}/>
+                        <Route path="/resources/examples" component={Examples}/>
                         <Route path="/resources/diversity" component={Diversity}/>
-
+                        <Route path="/register/cfp-help" component={ReviewRegistration}/>
                         <Route path="/" component={Home}/>
                     </Switch>
                 </div>

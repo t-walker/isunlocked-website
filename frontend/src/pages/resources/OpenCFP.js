@@ -3,14 +3,11 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 class OpenCFP extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      cfps: [],
-      loading: true
-    }
+  state = {
+    cfps: [],
+    loading: true
   }
+
   getOpenCFP() {
     axios.get('/api/v1/cfptime')
     .then((response) => {
@@ -91,12 +88,10 @@ class OpenCFP extends Component {
     );
   }
   render() {
-
     if (this.state.loading) { 
       return ("Loading...");
     }
-
-
+    
     return (
       <div className="container">
         <div className="row">
