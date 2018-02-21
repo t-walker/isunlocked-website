@@ -9,7 +9,7 @@ class ResourceLink extends Component {
     } = this.props; 
 
     return (
-        <p><a href={url} target="_blank"> {name}</a> | {author}</p>
+        <p><a href={url} target="_blank" rel="noopener noreferrer"> {name}</a> | {author}</p>
     );
   }
 }
