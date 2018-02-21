@@ -1,12 +1,14 @@
-# isunlocked
+# InfoSec Unlocked | Website
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.15.1.
+## About ISUnlocked
+We are InfoSec Unlocked and we are an organization that supports diverse voices at computer security conferences.
 
-## Build & development
+## Developing 
+To start developing clone the respository and run: 
 
-Run `grunt` for building and `grunt serve` for preview.
+```npm install``` 
 
-## Testing
 
-Running `grunt test` will run the unit tests with karma.
+To run the development server on port 5000 run:
+
+```npm start```
