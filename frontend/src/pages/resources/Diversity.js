@@ -6,13 +6,9 @@ import CodeOfConductResourceLinks from "../../assets/json/CodeOfConductLinks.jso
 import CFPResourceLinks from "../../assets/json/CFPResourceLinks.json";
 
 class Diversity extends Component {
-  constructor() {
-    super();
-
-    this.resourceLinks = DiversityResourceLinks;
-    this.cocLinks = CodeOfConductResourceLinks;
-    this.cfpLinks = CFPResourceLinks;
-  }
+  static resourceLinks = DiversityResourceLinks;
+  static cocLinks = CodeOfConductResourceLinks;
+  static cfpLinks = CFPResourceLinks;
 
   renderResourceLinks() {
     let resourceLinks = [];

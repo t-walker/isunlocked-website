@@ -4,11 +4,7 @@ import ResourceLink from '../../components/ResourceLink';
 import ExampleCFPs from "../../assets/json/ExampleCFPs.json";
 
 class Examples extends Component {
-  constructor() {
-    super();
-
-    this.resources = ExampleCFPs;
-  }
+  static resources = ExampleCFPs;
 
   renderResources() {
     let resources = [];

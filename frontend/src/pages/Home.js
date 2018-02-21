@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import PropTypes from 'prop-types'; 
+
 import logo from '../assets/img/logo.png';
 
 class Home extends Component {
@@ -73,8 +75,8 @@ class Home extends Component {
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-8">
+            <div className="row">
+                <div className="col-md-8">
                     <p>
                         InfoSec Unlocked 501(c)(3) is a non-profit organization supporting information security conferences and attendees.
                         Our primary focus is to support new speakers get talks accepted at conferences. It's our belief that by providing mentorship
@@ -85,14 +87,14 @@ class Home extends Component {
                         If you are interested in joining us please consider reaching out to <a href="mailto:insecunlocked@gmail.com">insecunlocked@gmail.com</a> for more information.
                     </p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-white mb-3">
-                        <div class="card-body bg-secondary">
-                            <h4 class="card-title text-success" style={{textAlign: "center"}}>CFP Review Program</h4>
-                            <p class="card-text text-white">
+                <div className="col-md-4">
+                    <div className="card text-white mb-3">
+                        <div className="card-body bg-secondary">
+                            <h4 className="card-title text-success" style={{textAlign: "center"}}>CFP Review Program</h4>
+                            <p className="card-text text-white">
                                 ISUnlocked provides a free review process for new speakers looking to get feedback before they submit. 
                             </p>
-                            <a class="btn btn-success btn-block" href="/register/cfp-help">Sign-Up Now</a>
+                            <a className="btn btn-success btn-block" href="/register/cfp-help">Sign-Up Now</a>
                         </div>
                     </div>
                 </div>
@@ -122,7 +124,12 @@ class Home extends Component {
 }
 
 class Resource extends Component {
-
+    static propTypes = {
+        children: PropTypes.object.isRequired,
+        title: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired
+    }
+    
     render() {
         return (
             <div className="col-md-6 mb-3">
