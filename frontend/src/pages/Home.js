@@ -52,7 +52,7 @@ class Home extends Component {
     let resources = [];
 
     for (let i = 0; i < this.resources.length; i++) {
-        resources.push(<Resource {... this.resources[i]} />);
+        resources.push(<Resource key={i} {... this.resources[i]} />);
     }
 
     return resources;
