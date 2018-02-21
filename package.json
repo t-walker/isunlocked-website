@@ -29,7 +29,6 @@
   "dependencies": {
     "axios": "^0.17.1",
     "body-parser": "^1.17.2",
-    "bootstrap": "^4.0.0",
     "compression": "^1.7.0",
     "express": "^4.15.3",
     "express-http-proxy": "^1.1.0",
@@ -37,9 +36,6 @@
     "http-proxy-middleware": "^0.17.4",
     "mongodb-autoincrement": "^1.0.1",
     "morgan": "^1.8.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "reactstrap": "^5.0.0-alpha.4",
     "request": "^2.83.0",
     "serve-favicon": "^2.4.3"
   },
