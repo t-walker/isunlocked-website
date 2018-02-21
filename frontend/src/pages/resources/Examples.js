@@ -12,7 +12,8 @@ class Examples extends Component {
     resources.push(<h2 className="text-primary" style={{textAlign: "center"}}>Sample CFP Submissions</h2>);
 
     for (let i = 0; i < this.resources.length; i++) {
-      resources.push(<ResourceLink {... this.resources[i]} />)
+      let link = this.resources[i];
+      resources.push(<ResourceLink {... link} />)
     }
 
     return resources;

@@ -88,12 +88,10 @@ class OpenCFP extends Component {
     );
   }
   render() {
-
     if (this.state.loading) { 
       return ("Loading...");
     }
-
-
+    
     return (
       <div className="container">
         <div className="row">

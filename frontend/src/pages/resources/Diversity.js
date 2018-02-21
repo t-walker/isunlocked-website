@@ -15,7 +15,7 @@ class Diversity extends Component {
 
     for (let i = 0; i < this.resourceLinks.length; i++) {
       let link = this.resourceLinks[i];
-      resourceLinks.push(<ResourceLink url={link.url} name={link.name} author={link.author} />);
+      resourceLinks.push(<ResourceLink {... link} />);
     }
 
     return resourceLinks;
@@ -26,7 +26,7 @@ class Diversity extends Component {
 
     for (let i = 0; i < this.cfpLinks.length; i++) {
       let link = this.cfpLinks[i];
-      cfpLinks.push(<ResourceLink url={link.url} name={link.name} author={link.author} />);
+      cfpLinks.push(<ResourceLink {... link} />);
     }
 
     return cfpLinks;
@@ -38,7 +38,7 @@ class Diversity extends Component {
 
     for (let i = 0; i < this.cocLinks.length; i++) {
       let link = this.cocLinks[i];
-      cocLinks.push(<ResourceLink url={link.url} name={link.name} author={link.author} />);
+      cocLinks.push(<ResourceLink {... link} />);
     }
 
     return cocLinks;
