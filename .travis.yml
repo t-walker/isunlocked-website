@@ -10,5 +10,5 @@ before_script:
   - sh -e /etc/init.d/xvfb start
 
 script:
-  - npm run test-server
-  - npm run test-react
+  - npm run buildServer
+  - npm run buildReact
