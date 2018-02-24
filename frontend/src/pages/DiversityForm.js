@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import axios from 'axios';
+import Recaptcha from 'react-recaptcha';
 
-class ReviewRegistration extends Component {
+class DiversityForm extends Component {
   state = {
   }
 
@@ -24,16 +25,6 @@ class ReviewRegistration extends Component {
   }
 
   handleSubmit(event) {
-    event.preventDefault();
-    axios.post('/api/v1/cfp-review-registration', this.state)
-    .then((response) => {
-      console.log(this.state);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-    
-    return false;
   }
 
 
