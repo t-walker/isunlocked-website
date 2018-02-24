@@ -32,7 +32,7 @@ class OpenCFP extends Component {
     oneMonthAhead.setDate(oneMonthAhead.getDate() + 30);
     
     let twoWeeksAhead = new Date();
-    twoWeeksAhead.setDate(oneMonthAhead.getDate() + 14);
+    twoWeeksAhead.setDate(twoWeeksAhead.getDate() + 14);
     
     let oneWeekAhead = new Date();
     oneWeekAhead.setDate(oneWeekAhead.getDate() + 7);
