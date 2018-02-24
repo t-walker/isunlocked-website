@@ -1,3 +1,3 @@
 npm run build
-scp -r ./dist/* twalker@isunlocked.com:~/isunlocked-website/dist
+scp -r ./dist/* twalker@isunlocked.com:~/isunlocked/dist
 
