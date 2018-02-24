@@ -75,7 +75,7 @@ class ReviewRegistration extends Component {
                     </FormGroup>
                     <FormGroup>
                         <Label className="form-label" for="conference">Which conference are you submitting to?</Label>
-                        <Input requiredclassName="form-input" type="text" name="conference" value={this.state.conference} onChange={this.handleChange} placeholder="(DEF CON, BSides, Black Hat, etc.)" />
+                        <Input className="form-input" type="text" name="conference" value={this.state.conference} onChange={this.handleChange} placeholder="(DEF CON, BSides, Black Hat, etc.)" />
                     </FormGroup>
                     <FormGroup>
                         <Label className="form-label" for="additional">Are there any other things you think we should know about your submission?</Label>
