@@ -1,7 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import logger from 'morgan';
-import favicon from 'serve-favicon';
 import helmet from 'helmet';
 import compression from 'compression';
 import path from 'path';
