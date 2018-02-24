@@ -12,6 +12,8 @@
 /frontend_build
 /server_build
 
+deploy.json
+
 # misc
 .DS_Store
 .env.local

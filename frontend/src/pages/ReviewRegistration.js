@@ -32,7 +32,9 @@ class ReviewRegistration extends Component {
     })
     .catch(function (error) {
       console.log(error);
-    });  
+    });
+    
+    return false;
   }
 
 

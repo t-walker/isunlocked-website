@@ -5,7 +5,9 @@
         "log_date_format": "YYYY-MM-DD HH:mm Z",
         "env": {
             "NODE_ENV": "production",
-            "PORT": 4000
+            "PORT": 4000,
+            "TRELLO_KEY": "***REMOVED***",
+	        "TRELLO_TOKEN": "***REMOVED***"
         }
     }]
 }
