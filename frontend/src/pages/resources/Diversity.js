@@ -6,9 +6,9 @@ import CodeOfConductResourceLinks from "../../assets/json/CodeOfConductLinks.jso
 import CFPResourceLinks from "../../assets/json/CFPResourceLinks.json";
 
 class Diversity extends Component {
-  static resourceLinks = DiversityResourceLinks;
-  static cocLinks = CodeOfConductResourceLinks;
-  static cfpLinks = CFPResourceLinks;
+  resourceLinks = DiversityResourceLinks;
+  cocLinks = CodeOfConductResourceLinks;
+  cfpLinks = CFPResourceLinks;
 
   renderResourceLinks() {
     let resourceLinks = [];
