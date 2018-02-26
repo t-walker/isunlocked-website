@@ -77,7 +77,7 @@ class ReviewRegistration extends Component {
 
         <div className="row mb-3">
             <div className="col-xl-6 col-md-12 col-sm-12">
-                <Form id="CFPRequestForm">
+                <Form onSubmit={(e) => {e.preventDefault()}} id="CFPRequestForm">
                     <FormGroup>
                         <Label className="form-label" for="text">What is your name?</Label>
                         <Input className="form-input" type="text" ref="name" name="name" value={this.state.name} onChange={this.handleChange} placeholder="your name (e.g. Jane Doe)"/>
@@ -109,7 +109,7 @@ class ReviewRegistration extends Component {
                         <Label className="form-label" for="additional">Are there any other things you think we should know about your submission?</Label>
                         <Input className="form-input" type="textarea" ref="additional" name="additional"  value={this.state.additional} onChange={this.handleChange} />
                     </FormGroup>
-                    <Button type="button" onClick={this.handleSubmit} className="btn-success col-md-12 col-lg-6 col-xl-4">Submit</Button>
+                    <Button type="submit"  className="btn-success col-md-12 col-lg-6 col-xl-4">Submit</Button>
                 </Form>
             </div>
         </div>
