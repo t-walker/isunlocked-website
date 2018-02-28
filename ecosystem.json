@@ -1,0 +1,17 @@
+{
+    "apps" : [{
+       "name" : "isunlocked:4000",
+       "script" : "dist/index.js"
+    }],
+    "deploy" : {
+      "production" : {
+        "user" : "twalker",
+        "host" : ["isunlocked.com"],
+        "ref"  : "origin/master",
+        "repo" : "git@github.com:t-walker/isunlocked-website.git",
+        "ssh_options": ["StrictHostKeyChecking=no"],
+        "path" : "/home/twalker/isunlocked",
+        "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
+      }
+    }
+ }
