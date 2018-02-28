@@ -55,7 +55,7 @@ class ReviewRegistration extends Component {
         <div className="row">
             <div className="col-md-12">
                 <div className={"alert alert-dismissible alert-" + this.state.type}>
-                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <button type="button" className="close" data-dismiss="alert">&times;</button>
                     {this.state.message}
                 </div>
             </div>
@@ -77,7 +77,7 @@ class ReviewRegistration extends Component {
 
         <div className="row mb-3">
             <div className="col-xl-6 col-md-12 col-sm-12">
-                <Form onSubmit={(e) => {e.preventDefault()}} id="CFPRequestForm">
+                <Form onSubmit={this.handleSubmit} id="CFPRequestForm">
                     <FormGroup>
                         <Label className="form-label" for="text">What is your name?</Label>
                         <Input className="form-input" type="text" ref="name" name="name" value={this.state.name} onChange={this.handleChange} placeholder="your name (e.g. Jane Doe)"/>
