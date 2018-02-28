@@ -14,7 +14,7 @@
         "repo" : "git@github.com:t-walker/isunlocked-website.git",
         "ssh_options": ["StrictHostKeyChecking=no"],
         "path" : "/home/twalker/isunlocked",
-        "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
+        "post-deploy" : "npm install && npm run build && pm2 startOrRestart ecosystem.json --env production"
       }
     }
  }
