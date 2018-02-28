@@ -2,7 +2,9 @@ import { Router } from 'express';
 
 import axios from 'axios';
 
-import trello from "../helpers/trello";
+import {trello, cardFromCFPRequest} from "../helpers/trello";
+
+import CFPRequest from "../models/CFPRequest";
 
 const router = Router();
 
@@ -23,88 +25,22 @@ function cfpTime(req, res) {
 }
 
 function cfpReviewRegistration(req, res) {
-    console.log(req.body);
+    var request = new CFPRequest(req.body);
 
-    let {
-        name: name, 
-        email: email, 
-        topic: topic,
-        progress: progress,
-        conference: conference,
-        additional: additional
-    } = req.body;
-    
-    let idList = "5a90999f8bdb915623f4a8f1";
-    
-    if (typeof(name) === "undefined") {
-        res.status(500).json({
-            error: "name is undefined"
-        })
-        throw new Error("name is undefined")
-    }
-
-    if (name.length > 30) {
-        res.status(500).json({
-            error: "name is too long"
-        })
-        throw new Error("name is undefined")
-    }
-
-    if (typeof(email) === "undefined") {
-        res.status(500).json({
-            error: "email is undefined"
-        })
-        throw new Error("email is undefined")
-    }
-
-    if (email.length > 30) {
-        res.status(500).json({
-            error: "email is too long"
-        })
-        throw new Error("email is undefined")
-    }
-
-    let description = "CFP Review for " + name + "(" + email + ")." + 
-                      "\nTopic is: " + topic + "." + 
-                      "\nProgress: " + progress +
-                      "\nConference: " + conference + "." +
-                      "\nAdditional Info: " + additional + ".";
-
-    let twoDaysAhead = new Date();
-    twoDaysAhead.setDate(twoDaysAhead.getDate() + 2);
-
-    let card = {
-        name: name,
-        idList: idList,
-        desc: description,
-        due: twoDaysAhead,
-        pos: "top"
-    }
-
-    let cardId = null; 
-
-    trello.post("/1/cards", card, 
-      (err, data) =>
-        {
-          if (err) throw err;
-          cardId = data.id;
-          
-          // Add the default checklist for paper reviews
-          let checkList = {
-              idCard: cardId,
-              idChecklistSource: "5a90d3edadd24879f4581561"
-          }
-
-          trello.post("/1/checklists", checkList, 
-            (err, data) => {
-                if (err) throw err;
-            });
+    request.save(function (err) {
+        if (err) {
+            res.status(500).json(
+                {data: err}
+            )
         }
-    );
 
-    res.status(200).json(
-        {data: "Created successfully"}
-    )
+        cardFromCFPRequest(req.body);
+        
+        res.status(200).json(
+            {data: "Created successfully"}
+        );
+
+    });
 }
 
 
