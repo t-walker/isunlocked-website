@@ -12,6 +12,23 @@ class Speakers extends Component {
         <hr />
         <div className="row">
           <div className="col-md-12">
+            <h2 className="text-success" style={{textAlign: "center"}}>InfoSec Unlocked CFP Review</h2>
+            <p>
+              InfoSec Unlocked's board of skilled speakers will help <a href="/register/cfp-help">review your paper</a> for free.
+            </p> 
+            <p>
+              Benefits of having your paper reviewed:
+              <ul>
+                <li>Avoid common pitfalls in speaking</li>
+                <li>Insight into the selection process</li>
+                <li>Learn directly from industry leaders</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div className="row">
+          <div className="col-md-12">
             <h2 className="text-success" style={{textAlign: "center"}}>Panels and Workshops</h2>
           </div>
         </div>

@@ -78,7 +78,7 @@ class Home extends Component {
             <div className="row">
                 <div className="col-md-8">
                     <p>
-                        InfoSec Unlocked 501(c)(3) is a non-profit organization supporting information security conferences and attendees.
+                        InfoSec Unlocked is a 501(c)(3) non-profit organization supporting information security conferences and attendees.
                         Our primary focus is to support new speakers get talks accepted at conferences. It's our belief that by providing mentorship
                         and resources to new speakers we will be able to diversify the speaker pool. 
                     </p>

@@ -17,14 +17,18 @@ class Organization extends Component {
         <p>
           If you are interested in serving on our board please reach out to: <a href="mailto:insecunlocked@gmail.com">insecunlocked@gmail.com</a>.
         </p>
-        <br />
+        <hr />
 
         <h2 className="text-success">Executive Committee</h2>
         <h3>Tyler Walker <small className="organization-subtitle">Executive Director</small></h3>
-        <h3>Steve Christey <small className="organization-subtitle">Executive Director</small></h3>
+        <h3>Steve Christey <small className="organization-subtitle">Advisor</small></h3>
         <p>
-            The executive committee handles the day-to-day operations.
+            The executive committee handles day-to-day operations of the organization and executes the mission of the board.
         </p>
+        <hr />
+        
+        <h2 className="text-success">Volunteers</h2>
+        <p>InfoSec Unlocked is purely a volunteer-driven effort. If you're interested in joining us please reach out to: <a href="mailto:insecunlocked@gmail.com">insecunlocked@gmail.com</a></p>
       </div>
     );
   }
