@@ -10,7 +10,7 @@ class Footer extends Component {
                     <span className="muted"><strong>Resources</strong></span><br />
         
                     <span className="muted">
-                        <a href="#">Code of Conduct</a><br />
+                        {/* <a href="#">Code of Conduct</a><br /> */}
                         <a href="/mission">Mission Statement</a><br />
                         <a href="/organization">Organization</a><br />
                     </span>
