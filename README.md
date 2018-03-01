@@ -1,4 +1,4 @@
-# InfoSec Unlocked | Website
+# InfoSec Unlocked | Website [![Build Status](https://travis-ci.org/InfoSec-Unlocked/website.svg?branch=master)](https://travis-ci.org/InfoSec-Unlocked/website)
 
 ## About ISUnlocked
 We are InfoSec Unlocked and we are an organization that supports diverse voices at computer security conferences.
