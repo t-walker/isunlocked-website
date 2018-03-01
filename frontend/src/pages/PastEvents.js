@@ -82,7 +82,7 @@ class PastEvents extends Component {
                 </div>
                 <div className="col-md-7">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe src="https://www.youtube.com/embed/4jCyS0Czt58" frameBorder="0" allowFullScreen></iframe>
+                    <iframe title="Diversity Organizations in Information Security" src="https://www.youtube.com/embed/4jCyS0Czt58" frameBorder="0" allowFullScreen></iframe>
                   </div>
                 </div>
               </div>
@@ -112,7 +112,7 @@ class PastEvents extends Component {
                 </div>
                 <div className="col-md-7">
                   <div className="embed-responsive embed-responsive-16by9">
-                    <iframe src="https://www.youtube.com/embed/9yp2azFIKRY" frameBorder="0" allowFullScreen></iframe>
+                    <iframe title="Submit a CFP for Security Conferences" src="https://www.youtube.com/embed/9yp2azFIKRY" frameBorder="0" allowFullScreen></iframe>
                   </div>
                 </div>
               </div>
