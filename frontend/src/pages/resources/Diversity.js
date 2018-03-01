@@ -55,7 +55,7 @@ class Diversity extends Component {
 
         <div className="row">
           <div className="col-md-12">
-            <h2 className="text-primary" style={{textAlign: "center"}}>Code of Conducts</h2>
+            <h2 className="text-primary" style={{textAlign: "center"}}>Code of Conduct</h2>
             <p>
               There have been many disucssions surrounding Code of Conducts. 
               Below are several different articles that show the varying opinions 

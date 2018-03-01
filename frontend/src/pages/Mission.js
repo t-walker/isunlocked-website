@@ -17,6 +17,8 @@ class Mission extends Component {
                 <li>Assist other diversity and inclusion related efforts at conferences</li>
                 <li>Provide speakers the ability to have papers reviewed before submission</li>
                 <li>Engage in discussions with conference organizers to promote inclusive policies</li>
+                <li>Provide new speakers with resources that teach them how to successfully submit presentations to conferences</li>
+
               </ul>
             </p>
             <hr />
