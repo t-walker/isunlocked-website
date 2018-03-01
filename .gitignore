@@ -12,8 +12,6 @@
 /frontend_build
 /server_build
 
-deploy.json
-ecosystem.json
 # misc
 .DS_Store
 .env.local
