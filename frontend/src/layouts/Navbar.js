@@ -81,17 +81,17 @@ class Navigation extends Component {
                     <DropdownItem>
                         <NavLink href="/resources/diversity">Diversity &amp; Inclusion</NavLink>
                     </DropdownItem>
-                    {/* <DropdownItem>
+                    <DropdownItem>
                         <NavLink href="/resources/open-cfps">Open CFPs</NavLink>
-                    </DropdownItem> */}
+                    </DropdownItem>
                     <DropdownItem>
                         <NavLink href="/resources/examples">Example CFPs</NavLink>
                     </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink href="https://twitter.com/isunlocked" target="_blank">Code of Conduct</NavLink>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLink href="https://twitter.com/isunlocked" target="_blank"><span className="fa fa-lg fa-twitter" style={{color: "#08a0E9"}}></span></NavLink>
               </NavItem>
