@@ -81,9 +81,9 @@ class Navigation extends Component {
                     <DropdownItem>
                         <NavLink href="/resources/diversity">Diversity &amp; Inclusion</NavLink>
                     </DropdownItem>
-                    <DropdownItem>
+                    {/* <DropdownItem>
                         <NavLink href="/resources/open-cfps">Open CFPs</NavLink>
-                    </DropdownItem>
+                    </DropdownItem> */}
                     <DropdownItem>
                         <NavLink href="/resources/examples">Example CFPs</NavLink>
                     </DropdownItem>
