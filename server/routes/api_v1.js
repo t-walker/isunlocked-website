@@ -35,6 +35,18 @@ function cfpReviewRegistration(req, res) {
         }
 
         cardFromCFPRequest(req.body);
+
+        let slack_message = request.name + " has requested a CFP review.";
+        let slackHook = process.env.SLACK_WEBHOOK;
+        
+        axios.post(slackHook, {text: slack_message})
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+
         
         res.status(200).json(
             {data: "Created successfully"}
