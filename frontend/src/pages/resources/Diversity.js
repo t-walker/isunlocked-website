@@ -57,7 +57,7 @@ class Diversity extends Component {
           <div className="col-md-12">
             <h2 className="text-primary" style={{textAlign: "center"}}>Code of Conduct</h2>
             <p>
-              There have been many disucssions surrounding Code of Conduct. 
+              There have been many discussions surrounding Code of Conduct. 
               Below are several different articles that show the varying opinions 
               on how to write an effective code of conduct. These do not necessarily 
               reflect the views of InfoSec Unlocked.
