@@ -10,20 +10,18 @@ const router = Router();
 router.route('/cfptime').get(cfpTime);
 router.route('/cfp-review-registration').post(cfpReviewRegistration);
 
-const mockCFPEntry = [
-    {
-        id: 479,
-        name: null,
-        cfp_deadline: null,
-        conf_start_date: null,
-        city: "Bochum",
-        province: "North Rhine-Westphalia",
-        country: "DE",
-        twitter: "ruhrsec",
-        website: "https://www.ruhrsec.de/2019/",
-        cfp_details: "In RuhrSec's fourth edition, we have once again a call for presentations. Areas of interest are (but are not restricted to) Internet/Web Security, Data and Application Security, Network Security, Security in the Internet of Things, and Usable Security.\r\n\r\nPlease submit your proposal to the RuhrSec program committee until the 20th of February 2018. We have an ongoing acceptance process; your chance is higher if you submit as early as possible. Your talk must have a length of 45 minutes including Q&A and it has to be in English. Each speaker gets a free two-day conference ticket, an invitation to the speakers dinner on Wednesday, and a travel reimbursement up to a limit of EUR 1,200 (economy (plus))."
-    }
-];
+const mockCFPEntry = {
+    id: 479,
+    name: null,
+    cfp_deadline: null,
+    conf_start_date: null,
+    city: "Bochum",
+    province: "North Rhine-Westphalia",
+    country: "DE",
+    twitter: "ruhrsec",
+    website: "https://www.ruhrsec.de/2019/",
+    cfp_details: "In RuhrSec's fourth edition, we have once again a call for presentations. Areas of interest are (but are not restricted to) Internet/Web Security, Data and Application Security, Network Security, Security in the Internet of Things, and Usable Security.\r\n\r\nPlease submit your proposal to the RuhrSec program committee until the 20th of February 2018. We have an ongoing acceptance process; your chance is higher if you submit as early as possible. Your talk must have a length of 45 minutes including Q&A and it has to be in English. Each speaker gets a free two-day conference ticket, an invitation to the speakers dinner on Wednesday, and a travel reimbursement up to a limit of EUR 1,200 (economy (plus))."
+};
 
 let mockCFPData = [];
 const today = new Date();

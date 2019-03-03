@@ -22,7 +22,7 @@ class Organization extends Component {
         <hr />
         
         <h2 className="text-success">Volunteers</h2>
-        <p>InfoSec Unlocked is purely a volunteer-driven effort. If you're interested in joining us please reach out to: <a href="mailto:insecunlocked@gmail.com">insecunlocked@gmail.com</a></p>
+        <p>InfoSec Unlocked is purely a volunteer-driven effort. If you're interested in joining us please reach out to: <a href="mailto:info@isunlocked.com">info@isunlocked.com</a></p>
       </div>
     );
   }

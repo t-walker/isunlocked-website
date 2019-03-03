@@ -73,18 +73,18 @@ class OpenCFP extends Component {
   renderOpenCFPTable() {
     return (
       <table className="table table-hover table-striped">
-      <thead className="bg-info">
-        <tr>
-        <th width="15%">CFP Deadline</th>
-          <th width="40%">Conference</th>
-          <th width="15%">Conference Date</th>
-          <th width="15%">Location</th>
-        </tr>
-      </thead>
-      <tbody>
-        {this.renderCFPRows()}
-      </tbody>
-    </table>
+        <thead>
+          <tr >
+            <th width="15%">CFP Deadline</th>
+            <th width="40%">Conference</th>
+            <th width="15%">Conference Date</th>
+            <th width="15%">Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          {this.renderCFPRows()}
+        </tbody>
+      </table>
     );
   }
   render() {

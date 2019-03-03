@@ -29,7 +29,7 @@ class Footer extends Component {
                 <div className="col-md-4">
                     <span className="muted"><strong>Join Our Team</strong></span><br />
                     <span className="muted">If you're interested in joining our team please e-mail us:<br /></span>
-                    <span className="muted"><a href="mailto:insecunlocked@gmail.com">insecunlocked@gmail.com</a></span>
+                    <span className="muted"><a href="mailto:info@isunlocked.com">info@isunlocked.com</a></span>
                 </div>
                 <hr />
 
