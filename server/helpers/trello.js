@@ -6,9 +6,6 @@ let apiToken = process.env.TRELLO_TOKEN;
 var trello = new Trello(apiKey, apiToken);
 
 export function cardFromCFPRequest(request) {
-    console.log("Request contains:");
-    console.log(request);
-
     let {
         name: name, 
         email: email, 
