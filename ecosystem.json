@@ -15,6 +15,15 @@
         "ssh_options": ["StrictHostKeyChecking=no"],
         "path" : "/home/twalker/isunlocked",
         "post-deploy" : "npm install && cd frontend && npm install && cd .. && npm run build && pm2 startOrRestart ecosystem.json --env production"
+      },
+      "development" : {
+        "user" : "twalker",
+        "host" : ["dev.isunlocked.com"],
+        "ref"  : "origin/master",
+        "repo" : "git@github.com:t-walker/isunlocked-website.git",
+        "ssh_options": ["StrictHostKeyChecking=no"],
+        "path" : "/home/twalker/isunlocked",
+        "post-deploy" : "npm install && cd frontend && npm install && cd .. && npm run build && pm2 startOrRestart ecosystem.json --env development"
       }
     }
  }
